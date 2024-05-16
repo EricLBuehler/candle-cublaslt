@@ -6,7 +6,7 @@ edition = "2021"
 description = "CUBLASLt gemm for the candle ML framework."
 
 [dependencies]
-candle-core = { git = "https://github.com/EricLBuehler/candle.git", version = "0.5.0" }
+candle-core = { git = "https://github.com/EricLBuehler/candle.git", version = "0.5.0", features = ["cuda"] }
 cudarc = { git = "https://github.com/coreylowman/cudarc", rev = "c388e724af93a3e8fbe484f5ded2d8b3c1badd8e", default-features = false, features = [ "cublaslt", "f16" ]}
 half = { version = "2.3.1", features = ["num-traits"] }
 
